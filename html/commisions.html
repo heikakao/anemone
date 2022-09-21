@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Design Display" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/queries.css" type="text/css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="../java/script.js"></script>
+    <script src="../java/jquery.js"></script>
+
+    <title>[DEMO] Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="btn-side-nav">
+        <ion-icon class="icon-side-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-side-nav" name="close-outline"></ion-icon>
+      </div>
+      <div class="side-nav">
+        <nav class="main-nav sticky-ver">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="./about.html">About</a></li>
+            <li>
+              <a class="main-nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="./commisions.html">Commissions</a>
+            </li>
+            <li><a class="main-nav-link" href="./contact.html">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sticky-hor nav-container">
+        <a href="../index.html">
+          <img class="logo" src="../images/logo.png" alt="Logo" />
+        </a>
+        <a href="./contact.html" class="contact-btn">Contact me</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="page" id="page-commissions">
+        <section class="section section-commission scrollable">
+          <div class="commissions-container">
+            <h2 class="tos-title">Terms of Service</h2>
+            <ul class="tos-lists">
+              <li class="tos">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                All prices are in USD. Payments via PayPal only.
+              </li>
+              <li class="tos">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                All payments must be made in FULL before I start the commision. Be sure to have all required funds or the commision will be declined.
+              </li>
+              <li class="tos">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                Strictly no refund if I'm already far ahead on your commision or after the commision is completed.
+              </li>
+              <li class="tos">
+                <ion-icon name="chevron-forward-outline"></ion-icon>Free five revisions on sketches until submitted. Complete reworks of the commission will cost the amount of the original work.
+              </li>
+              <li class="tos">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                For a set deadline, please let me know beforehand to confirm if I can make it.
+              </li>
+              <li class="tos">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                I will send you the WIP (work in progress) for you to approve before moving on to the next step. Please take note that I will NOT continue the work until the sketches are approved.
+              </li>
+              <li class="tos">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                Do not redistribute my work on any site without my permission and without crediting me.
+              </li>
+            </ul>
+            </div>
+
+            <div class="commissions-price">
+              <div class="commissions-price-img">
+
+                <div id ="defl" class="commissions-imgs">
+                  <img class="commissions-img" src="../images/gallery-4.jpg" alt="type 1" onclick="onClick(this)"/>
+                </div>
+
+                <div id ="one" class="commissions-imgs">
+                  <img class="commissions-img" src="../images/gallery-1.jpg" alt="type 1" onclick="onClick(this)"/>
+                </div>
+
+                <div id="two" class="commissions-imgs">
+                  <img class="commissions-img" src="../images/gallery-2.jpg" alt="type 1" onclick="onClick(this)"/>
+                </div>
+
+                <div id="two" class="commissions-imgs">
+                  <img class="commissions-img" src="../images/gallery-3.jpg" alt="type 1" onclick="onClick(this)"/>
+                </div>
+
+                <div id="modal01" class="modal">
+                  
+                  <span class="close" onclick="closeClick()"><ion-icon name="close-outline"></ion-icon></span>
+
+                  <div class="modal-content">
+                    <img id="img01" style="max-height:90vh; max-width:90vw;">
+                  </div>
+                </div>
+              </div>
+
+              <div class="commissions-text-box">
+                <ul class="commissions-btns">
+                  <li class="commissions-btn">Type 1</li>
+                  <li class="commissions-btn">Type 2</li>
+                  <li class="commissions-btn">Type 3</li>
+                </ul>
+                <div id="default" class="commissions">
+                  <div class="commissions-title">$50.00 - $100.00</div>
+                  <p class="commissions-desc">
+                    All commissions are made digitally. The default price
+                  </p>
+                </div>
+                <div id="first" class="commissions">
+                  <div class="commissions-title">$100.00</div>
+                  <p class="commissions-desc">
+                    Donec
+                    hendrerit, mauris a tempus sodales, tortor tortor aliquet metus,
+                    quis sollicitudin enim augue sit amet velit.
+                  </p>
+                  </div>
+
+                <div id="second" class="commissions">
+                <div class="commissions-title">$50.00</div>
+                <p class="commissions-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                </div>
+
+                <div id="third" class="commissions">
+                  <div class="commissions-title">$75.00</div>
+                  <p class="commissions-desc">
+                    Mauris a tempus sodales, tortor tortor aliquet metus,
+                quis sollicitudin enim augue sit amet velit.
+                  </p>
+                  </div>
+              </div>
+            </div>
+
+
+<div class="form-container">
+            <form name="commissions" class="commissions-form">
+  
+              <div>
+                <label for="name">Name*</label>
+                <input
+                  id="your-name"
+                  type="text"
+                  placeholder="Name"
+                  name="Name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email*</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  name="Email"
+                  required
+                />
+              </div>
+              <div>
+                <label>Have you thoroughly read the Terms of Service?*</label>
+                <div class="radio">
+                  <input
+                  id="tos-agreement"
+                  type="radio"
+                  value="true"
+                  name="Agreement"
+                  required
+                  />
+                  <label for="tos-agreement">I understand, acknowledge, and agree to all the terms stated.</label>
+                </div>
+              </div>
+              <div>
+                <label for="social">Twitter or Instagram handle (so I can reach you faster)*</label>
+                <input
+                  id="social"
+                  type="text"
+                  placeholder="twitter: @username"
+                  name="Social_Media"
+                  required
+                />
+              </div>
+                <label>What would you like to commission?*</label>
+                <div class="checkbox-group options">
+                  <div class="option">
+                    <input type="checkbox" id="type1" name="Type1" value="true" required/>
+                    <label for="type1">Type 1</label>
+                  </div>
+                  <div class="option">
+                  <input type="checkbox" id="type2" name="Type2" value="true" required/>
+                  <label for="type2">Type 2</label>
+                </div>
+                <div class="option">
+                  <input type="checkbox" id="type3" name="Type3" value="true" required/>
+                  <label for="type3">Type 3</label>
+                  </div>
+                </div>
+                <div>
+                  <label for="reference">Describe Specifics (you can compile and upload it through google docs / google spreadsheet)*</label>
+                  <input
+                  id="reference"
+                  type="url"
+                  placeholder="example: https://docs.google.com/spreadsheets/"
+                  name="Reference"
+                  pattern="https://.+"
+                  requred
+                  />
+                </div>
+                <div>
+                  <label for="extra">Anything else?</label>
+                  <input
+                    id="extra"
+                    type="text"
+                    placeholder="Write here"
+                    name="Extra"
+                  />
+                </div>
+                <div>
+                  <label for="bot">to make sure you are human! What is 1+5?*</label>
+                  <input
+                    id="bot"
+                    type="number"
+                    placeholder="0"
+                    name="Spam?"
+                    required
+                  />
+                </div>
+              <input type="submit" value="Submit" class="btn--form"></input>
+            </form>
+            <div class="form-title">Commission Form</div>
+            </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+/* rem and em do NOT depend on html font-size in media queries, instead, assume 1 rem = 1 em = 16 px. */
+
+/****************/
+/* BELOW 1200px */
+/****************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/****************/
+/* BELOW 1072px */
+/****************/
+@media (max-width: 67em) {
+  html {
+    font-size: 56.25%;
+  }
+  .commissions-price {
+    margin: 6.4rem;
+  }
+  .commissions-form {
+    padding: 4.8rem;
+  }
+  .commissions-text-box {
+    padding-right: 8rem;
+  }
+  .portfolio-text-container {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-img {
+    height: 30rem;
+    border: solid 1px #0b7285;
+  }
+
+  .about-text-box {
+    text-align: center;
+    border-top: none;
+    padding: 4.8rem;
+  }
+
+  .about-list {
+    justify-content: center;
+  }
+}
+
+/****************/
+/* BELOW 928px */
+/****************/
+@media (max-width: 58em) {
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+  }
+
+  .heading-primary {
+    letter-spacing: -2px;
+  }
+
+  .hero-img {
+    height: 60%;
+    width: auto;
+  }
+
+  .hero-text-box {
+    text-align: center;
+    padding: 6.4rem;
+    border: none;
+  }
+
+  .commissions-price {
+    display: block;
+    width: 50rem;
+    margin: 6.4rem auto;
+  }
+
+  .commissions-img {
+    margin: 0 auto;
+    width: 50rem;
+  }
+
+  .commissions-text-box {
+    margin: 3.2rem 0;
+    padding: 0;
+    display: block;
+  }
+
+  .commissions-btns {
+    text-align: center;
+  }
+
+  .commissions-container {
+    display: inline-block;
+  }
+
+  .tos-title {
+    padding: 3.2rem 6.4rem;
+  }
+
+  .tos-lists {
+    border-left: none;
+    border-top: 1px solid #0b7285;
+    padding: 3.2rem 6.4rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .form-title {
+    border-left: none;
+    border-bottom: solid 1px #0b7285;
+    padding: 3.2rem 6.4rem;
+  }
+
+  .commissions-form {
+    padding: 4.8rem 6.4rem;
+  }
+
+  .portfolio-container {
+    padding: 3.2rem;
+    column-gap: 3.2rem;
+  }
+
+  .portfolio-img {
+    margin-bottom: 3.2rem;
+  }
+
+  .portfolio-text-container {
+    display: inline-block;
+  }
+
+  .portfolio-text-box {
+    border-right: none;
+  }
+
+  .empty-box {
+    display: none;
+  }
+  .contact-btn:link,
+  .contact-btn:visited,
+  .contact-btn:hover,
+  .contact-btn:active {
+    display: none;
+  }
+
+  .btn-side-nav {
+    left: auto;
+    right: 1.5rem;
+  }
+}
+
+/****************/
+/* BELOW 608px */
+/****************/
+@media (max-width: 38em) {
+  .about-grid {
+    padding: 0;
+  }
+  .about-img {
+    border: none;
+  }
+
+  .about-text-box {
+    border: none;
+  }
+
+  .tos-title,
+  .tos-lists,
+  .commissions-form,
+  .form-title,
+  .portfolio-container {
+    padding: 1.6rem;
+  }
+
+  .tos-title,
+  .form-title {
+    font-size: 3.6rem;
+    letter-spacing: -1px;
+  }
+
+  .commissions-price {
+    margin: 3.2rem auto;
+  }
+
+  .portfolio-img {
+    margin-bottom: 1.6rem;
+  }
+
+  .portfolio-container {
+    column-count: 1;
+  }
+
+  .contacts-desc,
+  .social-media {
+    width: 35rem;
+  }
+}
+
+/****************************/
+/* FIXING FLEXBOX ON SAFARI */
+/****************************/
+
+/* .no-flexbox-gap .flex-horizontal:not(:last-child) { */
